@@ -7,6 +7,7 @@ from pydantic import BaseModel, Field
 from typing import Optional
 
 class IndividuSchema(BaseModel):
+
     first_name: str = Field(min_length=1, example="John")
     last_name: str = Field(min_length=1, example="Doe")
     birth_date: str = Field(example="2000-01-01")
